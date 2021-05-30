@@ -1,6 +1,6 @@
 {
     "name": "ahmard/flutterwave",
-    "description": "Flutterwave PHP client",
+    "description": "Flutterwave PHP API client",
     "type": "library",
     "license": "MIT",
     "authors": [
