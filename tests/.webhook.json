@@ -1,0 +1,38 @@
+{
+  "event": "charge.completed",
+  "data": {
+    "id": 2266292,
+    "tx_ref": "60b9087ad9063",
+    "flw_ref": "FLW-MOCK-c091809b01bda7adeba0f9e0375aa358",
+    "device_fingerprint": "5af6121b773711871bb766e0f32ef541",
+    "amount": 100,
+    "currency": "NGN",
+    "charged_amount": 100,
+    "app_fee": 1.4,
+    "merchant_fee": 0,
+    "processor_response": "Approved. Successful",
+    "auth_model": "VBVSECURECODE",
+    "ip": "56.108.153.116",
+    "narration": "CARD Transaction ",
+    "status": "successful",
+    "payment_type": "card",
+    "created_at": "2021-06-03T16:55:29.000Z",
+    "account_id": 738117,
+    "customer": {
+      "id": 1068589,
+      "name": "Mallam Tanko",
+      "phone_number": null,
+      "email": "mallamtanko@flutterwave.test",
+      "created_at": "2021-06-03T16:55:29.000Z"
+    },
+    "card": {
+      "first_6digits": "418742",
+      "last_4digits": "4246",
+      "issuer": "VISA ACCESS BANK PLC DEBIT CLASSIC",
+      "country": "NG",
+      "type": "VISA",
+      "expiry": "09\/2032"
+    }
+  },
+  "event.type": "CARD_TRANSACTION"
+}

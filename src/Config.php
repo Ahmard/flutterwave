@@ -15,6 +15,7 @@ class Config
         'keys' => [
             'public' => '',
             'private' => '',
+            'webhook-hash' => '',
         ]
     ];
 
@@ -26,6 +27,11 @@ class Config
     public static function privateKey(string $privateKey): void
     {
         self::$data['keys']['private'] = $privateKey;
+    }
+
+    public static function webhookSecretHash(string $hash): void
+    {
+        self::$data['keys']['webhook-hash'] = $hash;
     }
 
 
