@@ -6,6 +6,8 @@ namespace Ahmard\Flutterwave;
 
 class Webhook
 {
+    public const EVENT_CHARGE_COMPLETED = 'charge.completed';
+
     protected static array $data;
 
 
