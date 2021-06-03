@@ -2,6 +2,7 @@
 
 namespace Ahmard\Flutterwave\Tests;
 
+use Ahmard\Flutterwave\Config;
 use Ahmard\Flutterwave\Webhook;
 use PHPUnit\Framework\TestCase;
 
@@ -13,6 +14,14 @@ class WebhookTest extends TestCase
     {
         $this->webhook = WebhookTestBait::capture();
         parent::setUp();
+    }
+
+    public function testVerifyMethod()
+    {
+        Config::webhookSecretKey('1234');
+        Config::webhookSecretHash('$2y$10$MK.S8RB.ptfFnf5OOu0Fi.HGlcvWI1FCKafzhcyLQ9qi.NbNHLP6G');
+
+        self::assertTrue($this->webhook->isTrusted());
     }
 
     public function testThatCreateMethodReturnInstance(): void

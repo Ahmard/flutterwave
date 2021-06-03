@@ -18,7 +18,10 @@ class Webhook
 
     public function isTrusted(): bool
     {
-        return true;
+        return password_verify(
+            Config::getData()['keys']['webhook-key'],
+            Config::getData()['keys']['webhook-hash']
+        );
     }
 
     public function getEvent(): ?string
