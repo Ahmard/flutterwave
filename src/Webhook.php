@@ -174,7 +174,7 @@ class Webhook
      *
      * @return array
      */
-    public static function getData(): array
+    public function getData(): array
     {
         return self::$data;
     }
