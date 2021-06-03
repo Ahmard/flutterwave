@@ -168,4 +168,14 @@ class Webhook
     {
         return self::$data['data']['card']['expiry'] ?? null;
     }
+
+    /**
+     * Returns json-encoded data sent from webhook
+     *
+     * @return array
+     */
+    public static function getData(): array
+    {
+        return self::$data;
+    }
 }
