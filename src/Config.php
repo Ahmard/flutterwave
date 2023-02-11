@@ -57,6 +57,6 @@ class Config
      */
     public static function getEndpoint(string $endpointKey): string
     {
-        return self::$data['api.uri'] . self::$data['endpoints'][$endpointKey] ?? '';
+        return self::$data['api.uri'] . self::$data['endpoints'][$endpointKey];
     }
 }
